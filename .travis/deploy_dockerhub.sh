@@ -8,4 +8,4 @@ else
 fi
 sudo docker build -f Dockerfile -t curtisk808/cicd-os .
 
-sudo docker push cirtisk808/cicd-os
+sudo docker push curtisk808/cicd-os
