@@ -13,5 +13,5 @@ echo $TAG
 
 sudo docker build -t cicd-os .
 sudo docker images
-sudo docker tag cicd-os $TRAVIS_REPO_SLUG:$TAG
-sudo docker push $TRAVIS_REPO_SLUG:$TAG
+sudo docker tag cicd-os curtisk808/cicd-os:latest
+sudo docker push curtisk808/cicd-os:latest
