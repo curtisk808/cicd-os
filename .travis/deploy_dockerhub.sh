@@ -1,5 +1,5 @@
 #i/bin/sh
-sudo docker login -u $DOCKER_USER -p $DOCKER_PASS docker.io
+sudo docker login -u $DOCKER_USER -p $DOCKER_PASS
 
 if [ "$TRAVIS_BRANCH" = "master" ]; then
     TAG="latest"
@@ -12,4 +12,5 @@ echo $TRAVIS_REPO_SLUG
 echo $TAG
 
 sudo docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:$TAG .
+sudo docker images
 sudo docker push $TRAVIS_REPO_SLUG:$TAG
