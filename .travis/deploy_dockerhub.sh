@@ -1,5 +1,5 @@
 #i/bin/sh
-sudo docker login -u $DOCKER_USER -p $DOCKER_PASS
+sudo docker login -u $DOCKER_USER -p $DOCKER_PASS docker.io
 
 if [ "$TRAVIS_BRANCH" = "master" ]; then
     TAG="latest"
